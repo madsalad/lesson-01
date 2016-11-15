@@ -9,12 +9,12 @@ import java.util.concurrent.TimeUnit;
 
 public class lesson01 {
 
-    public WebDriver driver = new ChromeDriver();
+    public WebDriver driver;
 
     @Before
     public void conf (){
 
-
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
